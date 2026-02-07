@@ -31,7 +31,7 @@ def load_nist_framework(framework_path):
     return read_policy_document(framework_path)
 
 
-def call_local_llm(prompt, model="gemma3:latest"):
+def call_local_llm(prompt, model="gemma3:4b"):
     """Call local LLM via Ollama (fully offline after model download)."""
     # Check prompt size
     if len(prompt) > MAX_PROMPT_SIZE:

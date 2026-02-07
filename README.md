@@ -160,7 +160,7 @@ flowchart TB
     subgraph LLMRuntime["🤖 LOCAL LLM RUNTIME"]
         direction TB
         OLLAMA["Ollama Service<br/>subprocess.run()"]
-        MODEL["Gemma3:latest<br/>Fully Offline"]
+        MODEL["Gemma3:4b<br/>Fully Offline"]
         CONFIG["Configuration<br/>Timeout: 600s<br/>Max Prompt: 100KB<br/>Max Policy: 50KB"]
         
         OLLAMA --- MODEL
@@ -428,7 +428,7 @@ pip install -r requirements.txt
 | Step | Command | Notes |
 |------|---------|-------|
 | Install Ollama | [Download](https://ollama.ai/download) | One-time install |
-| Pull Model | `ollama pull gemma3:latest` | Requires internet |
+| Pull Model | `ollama run gemma3:4b` | Requires internet |
 | Verify | `ollama list` | Should show gemma3 |
 
 ### Step 3: Run Analysis
@@ -622,8 +622,8 @@ flowchart TD
 | Error | Solution |
 |-------|----------|
 | `ollama: command not found` | Install Ollama from [ollama.ai](https://ollama.ai/download) |
-| `Model not found` | Run `ollama pull gemma3:latest` |
-| `LLM execution failed` | Verify: `ollama run gemma3:latest` |
+| `Model not found` | Run `ollama pull gemma3:4b` |
+| `LLM execution failed` | Verify: `ollama run gemma3:4b` |
 | `File too large` | Split policy or use TXT format |
 
 ---

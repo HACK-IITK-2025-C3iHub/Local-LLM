@@ -161,7 +161,7 @@ Examples:
   python main.py --policy data/test_policies/data_privacy_policy.txt --output results
   python main.py --batch data/test_policies/
 
-Note: Requires Ollama with gemma3:latest model installed.
+Note: Requires Ollama with gemma3:4b model installed.
       System operates completely offline after initial setup.
         """
     )

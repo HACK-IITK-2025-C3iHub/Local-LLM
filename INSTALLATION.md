@@ -41,7 +41,7 @@ brew install ollama
 ### 3. Download LLM Model
 
 ```bash
-ollama pull gemma3:latest
+ollama pull gemma3:4b
 ```
 
 ### 4. Verify Installation
@@ -72,7 +72,7 @@ python src/main.py --policy data/test_policies/isms_policy.txt
 
 **Model not found:**
 ```bash
-ollama pull gemma3:latest
+ollama pull gemma3:4b
 ```
 
 **Python packages error:**
