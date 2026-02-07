@@ -34,6 +34,8 @@ The system identifies policy weaknesses, generates revised policies addressing t
 | [Developer Guide](#developer-guide) | Contributing code |
 | [Contributor Expectations](#contributor-expectations) | Guidelines for contributors |
 | [Known Issues](#known-issues--limitations) | Current limitations |
+| [PDF Enhancement](BEFORE_AFTER_COMPARISON.md) | Before/After comparison of PDF output |
+| [📄 README.pdf](README.pdf) | PDF version with rendered diagrams |
 
 ---
 
@@ -300,7 +302,8 @@ sequenceDiagram
 ```mermaid
 %%{init: {'theme': 'base'}}%%
 flowchart TB
-    subgraph Framework["🛡️ NIST CYBERSECURITY FRAMEWORK"]
+    subgraph Framework["🛡️ NIST&nbsp;CYBERSECURITY&nbsp;FRAMEWORK"]
+
         direction TB
         
         subgraph Core["Core Functions"]
@@ -474,66 +477,64 @@ Reports are generated in the `output/` directory:
 
 ```mermaid
 %%{init: {'theme': 'base'}}%%
-flowchart TB
-    subgraph EntryPoint["🚀 ENTRY POINT"]
-        MAIN["<b>main.py</b><br/>216 lines<br/>CLI & Orchestration"]
+flowchart LR
+
+    %% ================= ENTRY =================
+    subgraph Entry["🚀 ENTRY POINT"]
+        MAIN["main.py<br/>CLI & Orchestration"]
     end
 
-    subgraph CoreModules["🔧 CORE ANALYSIS MODULES"]
-        direction TB
-        
-        subgraph GapMod["gap_analyzer.py - 131 lines"]
-            GA1["load_nist_framework()"]
+    %% ================= CORE =================
+    subgraph Core["🔧 CORE MODULES"]
+        direction LR
+
+        subgraph Gap["gap_analyzer.py"]
             GA2["analyze_policy_gaps()"]
             GA3["call_local_llm()"]
             GA4["extract_gaps_structured()"]
         end
-        
-        subgraph RevMod["policy_reviser.py - 65 lines"]
+
+        subgraph Rev["policy_reviser.py"]
             PR1["revise_policy()"]
-            PR2["generate_revision_summary()"]
         end
-        
-        subgraph RoadMod["roadmap_generator.py - 112 lines"]
+
+        subgraph Road["roadmap_generator.py"]
             RG1["generate_improvement_roadmap()"]
             RG2["generate_executive_summary()"]
         end
     end
 
-    subgraph SupportModules["🛠️ SUPPORT MODULES"]
-        direction TB
-        
-        subgraph UtilMod["utils.py - 78 lines"]
+    %% ================= SUPPORT =================
+    subgraph Support["🛠️ SUPPORT"]
+        direction LR
+
+        subgraph Util["utils.py"]
             U1["read_policy_document()"]
-            U2["read_text_file()"]
-            U3["read_pdf_file()"]
-            U4["read_docx_file()"]
             U5["save_output()"]
-            U6["validate_file_size()"]
         end
-        
-        subgraph PDFMod["pdf_generator.py - 167 lines"]
-            P1["create_pdf_report()"]
+
+        subgraph PDF["pdf_generator.py"]
             P2["generate_all_pdfs()"]
-            P3["escape_html()"]
         end
     end
 
-    MAIN ==>|"1. Load"| U1
-    MAIN ==>|"2. Analyze"| GA2
-    MAIN ==>|"3. Revise"| PR1
-    MAIN ==>|"4. Roadmap"| RG1
-    MAIN ==>|"5. Summary"| RG2
-    MAIN ==>|"6. Generate"| P2
+    %% ================= FLOW =================
+    MAIN -->|Load| U1
+    MAIN -->|Analyze| GA2
+    MAIN -->|Revise| PR1
+    MAIN -->|Roadmap| RG1
+    MAIN -->|Summary| RG2
+    MAIN -->|Generate PDFs| P2
 
-    GA2 & PR1 & RG1 & RG2 -.->|"LLM Calls"| GA3
+    GA2 -.->|LLM| GA3
+    PR1 -.->|LLM| GA3
+    RG1 -.->|LLM| GA3
+    RG2 -.->|LLM| GA3
 
-    style EntryPoint fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
-    style CoreModules fill:#dcfce7,stroke:#22c55e,stroke-width:2px
-    style SupportModules fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
-    style GapMod fill:#e0f2fe,stroke:#0ea5e9
-    style RevMod fill:#d1fae5,stroke:#10b981
-    style RoadMod fill:#fce7f3,stroke:#ec4899
+    %% ================= STYLING =================
+    style Entry fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style Core fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style Support fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
 ```
 
 ### Adding a New Policy Type
