@@ -2,8 +2,8 @@
 
 ## Official Document
 Download the official CIS MS-ISAC NIST Cybersecurity Framework Policy Template Guide (2024) from:
-    https://www.cisecurity.org/-/media/project/cisecurity/cisecurity/data/media/files/uploads/2024/08/cisms-isac-nist-cybersecurity-framework-policy-template-guide-2024.pdf
-
+    https://www.cisecurity.org/-/media/project/cisecurity/cisecurity/data/media/files/uploads/2024/08/cis-ms-isac-nist-cybersecurity-framework-policy-template-guide-2024.pdf
+    
 Place the PDF file in this directory as: `nist_csf_guide_2024.pdf`
 
 ## Current Reference
