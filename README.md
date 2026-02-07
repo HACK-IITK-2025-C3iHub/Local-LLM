@@ -302,7 +302,7 @@ sequenceDiagram
 ```mermaid
 %%{init: {'theme': 'base'}}%%
 flowchart TB
-    subgraph Framework["🛡️ NIST&nbsp;CYBERSECURITY&nbsp;FRAMEWORK"]
+    subgraph Framework["NIST&nbsp;CYBERSECURITY&nbsp;FRAMEWORK"]
 
         direction TB
         
