@@ -1,0 +1,50 @@
+DATA PRIVACY AND SECURITY POLICY
+Organization: TechCorp Industries
+Effective Date: January 1, 2024
+Version: 1.0
+
+1. PURPOSE
+This policy outlines TechCorp's approach to protecting personal and sensitive data collected from customers and employees.
+
+2. SCOPE
+This policy applies to all data collected, processed, and stored by TechCorp Industries.
+
+3. DATA COLLECTION
+TechCorp collects customer information including names, email addresses, and payment details necessary for business operations.
+
+4. DATA CLASSIFICATION
+Data is categorized as:
+- Public: Information available to everyone
+- Internal: Information for employee use only
+- Confidential: Sensitive business information
+
+5. DATA STORAGE
+Customer data is stored on company servers located in our data center. Backup copies are created weekly.
+
+6. DATA ACCESS
+- Only authorized personnel can access customer data
+- Access is granted based on job requirements
+- Employees must not share login credentials
+
+7. DATA RETENTION
+Customer data is retained for as long as necessary for business purposes. Old records are deleted when no longer needed.
+
+8. DATA SECURITY MEASURES
+- Firewalls protect network perimeter
+- Antivirus software is installed on all workstations
+- Data is backed up regularly
+
+9. THIRD-PARTY SHARING
+TechCorp may share customer data with service providers who assist in business operations. These providers are expected to maintain confidentiality.
+
+10. DATA BREACH RESPONSE
+In the event of a data breach, the IT team will investigate and take corrective action. Affected parties will be notified if required.
+
+11. EMPLOYEE RESPONSIBILITIES
+Employees must handle data responsibly and report any suspected security issues to their supervisor.
+
+12. POLICY UPDATES
+This policy may be updated periodically to reflect changes in business practices.
+
+Approved by:
+Sarah Johnson, Chief Operating Officer
