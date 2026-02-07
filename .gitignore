@@ -27,4 +27,4 @@ output/*
 Thumbs.db
 
 # Data
-data/reference/*.pdf
+data/test_data/

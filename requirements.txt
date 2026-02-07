@@ -1,0 +1,14 @@
+# Local LLM Policy Gap Analysis - Dependencies
+# All packages support offline operation after installation
+
+# Local LLM Framework (choose one)
+ollama>=0.1.0
+
+# Document Processing
+PyPDF2>=3.0.0
+python-docx>=1.0.0
+
+# PDF Generation
+reportlab>=4.0.0
+
+# Text Processing
