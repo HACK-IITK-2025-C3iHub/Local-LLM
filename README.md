@@ -414,7 +414,7 @@ Local-LLM/
 
 ```bash
 # Clone repository
-git clone https://github.com/HACK-IITK-2025-C3iHub/Local-LLM.git
+git clone https://github.com/HACK-IITK-2025-C3iHub/Local-LLM-UI.git
 cd "Local LLM"
 
 # Create and activate virtual environment
