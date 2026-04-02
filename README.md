@@ -27,7 +27,7 @@ The system identifies policy weaknesses, generates revised policies addressing t
 | Section | Description |
 |---------|-------------|
 | [Features](#features) | Core capabilities |
-| [USP & MVP Analysis](https://hack-iitk-2025-c3ihub.github.io/Local-LLM-UI/LocalLLM_USP_MVP.pdf) | Project positioning & value proposition |
+| [USP & MVP Analysis](https://hack-iitk-2025-c3ihub.github.io/Local-LLM/LocalLLM_USP_MVP.pdf) | Project positioning & value proposition |
 | [Tech Stack](#tech-stack--prerequisites) | Technologies and requirements |
 | [Architecture](#architecture-diagram) | Visual system overview |
 | [Project Structure](#project-structure) | File organization |
