@@ -59,7 +59,7 @@ The system identifies policy weaknesses, generates revised policies addressing t
 
 For a detailed breakdown of the project's positioning, unique value, and what the MVP actually delivers, read the full analysis:
 
-https://hack-iitk-2025-c3ihub.github.io/Local-LLM/LocalLLM_USP_MVP.pdf
+https://hack-iitk-2025-c3ihub.github.io/Local-LLM/
 
 ---
 
