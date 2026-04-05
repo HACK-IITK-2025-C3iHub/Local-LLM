@@ -27,7 +27,6 @@ The system identifies policy weaknesses, generates revised policies addressing t
 | Section | Description |
 |---------|-------------|
 | [Features](#features) | Core capabilities |
-| [USP & MVP Analysis](https://github.com/HACK-IITK-2025-C3iHub/Local-LLM/blob/main/README.md#usp--mvp-analysis) | Project positioning & value proposition |
 | [Tech Stack](#tech-stack--prerequisites) | Technologies and requirements |
 | [Architecture](#architecture-diagram) | Visual system overview |
 | [Project Structure](#project-structure) | File organization |
@@ -52,14 +51,6 @@ The system identifies policy weaknesses, generates revised policies addressing t
 | **PDF Output** | Professional formatted reports using ReportLab |
 | **Batch Processing** | Analyze multiple policies in one run |
 | **100% Offline** | Zero network calls after initial setup |
-
----
-
-## USP & MVP Analysis
-
-For a detailed breakdown of the project's positioning, unique value, and what the MVP actually delivers, read the full analysis:
-
-https://hack-iitk-2025-c3ihub.github.io/Local-LLM/
 
 ---
 
